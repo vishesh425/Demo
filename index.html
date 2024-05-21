@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title></title>
+</head>
+<body>
+<nav Class="nav_Container">
+      <div Class="logo_Conatiner">
+        <h2 Class="logo">Restaurant Landing Page</h2>
+      </div>
+
+        <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span> </span>
+        </div>
+
+      <dv Class="link_container">
+        <ul>
+        	<li Class="link">
+             <a href="section.html" >Landing</a>
+          </li>
+          <li Class="link">
+             <a href="#" >Home</a> 
+          </li>
+          <li Class="link">
+             <a href="#" >Gallery</a> 
+          </li>
+          <li Class="link">
+             <a href="#" >Shop</a> 
+          </li>
+          <li Class="link">
+             <a href="#" >Blog</a> 
+          </li>
+          <li Class="link">
+             <a href="#" >About</a> 
+          </li>
+          <li Class="link">
+             <a href="#" >Team</a> 
+          </li>
+          <li Class="link link_icon">
+             <a href="#">Contact </a> 
+           <a href="# "><img src={shopping} Class="icon"/></a>
+          </li>
+        </ul>
+      </dv>
+    </nav>
+<!-- first section -->
+    <div class="f_container">
+      <div class="first">
+        <div class="f_data">
+          <h1>Only Quality Food</h1>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architectoeaque ipsa quae
+            ab illo inventore.
+          </p>
+          <button class="btn_1" > VIEW MENU</button>
+          <button class="btn_1 btn_2" >RESERVATION</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+       const hamMenu = document.querySelector('.ham-menu');
+       const linkc = document.querySelector('.link_container');
+// console.log("hello")
+       hamMenu.addEventListener('click',()=>{
+// console.log("hello")
+          linkc.classList.toggle('active');
+         hamMenu.classList.toggle('active');
+       })
+
+    </script>
+</body>
+</html>
